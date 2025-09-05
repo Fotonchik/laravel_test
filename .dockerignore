@@ -1,0 +1,14 @@
+.git
+.gitignore
+docker-compose.override.yml
+.env
+.storage
+.phpunit.result.cache
+.php-cs-fixer.cache
+.phpunit.cache
+.idea
+node_modules
+vendor
+*.log
+*.tar.gz
+*.zip
