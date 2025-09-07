@@ -3,13 +3,14 @@ Docker Desktop (Windows/Mac) или Docker Engine (Linux)
 Git
 4 ГБ+ оперативной памяти
 1. Клонирование репозитория
+   
 git clone https://github.com/Fotonchik/laravel_test.git
 cd laravel_test
 git checkout main-new
 
-2. Запуск проекта
+3. Запуск проекта
 bash
-3. Запуск всех контейнеров
+4. Запуск всех контейнеров
 
 docker compose up -d --build
 
