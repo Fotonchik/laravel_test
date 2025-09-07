@@ -14,7 +14,7 @@ git checkout main-new
 ```
 
 3. Запуск проекта
-bash
+
 4. Запуск всех контейнеров
 
 ```
@@ -39,7 +39,7 @@ DB_USERNAME=root
 DB_PASSWORD=secret
 ```
 7. Установите зависимости Composer внутри контейнера
-bash
+
 
 ```
 
