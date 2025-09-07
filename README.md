@@ -1,27 +1,53 @@
-# Laravel Project with Docker
-
-Проект интернет-магазина на Laravel с Docker-контейнеризацией.
-
-## 🚀 Быстрый запуск
-
-### Предварительные требования
-- Docker Desktop (Windows/Mac) или Docker Engine (Linux)
-- Git
-- 4 ГБ+ оперативной памяти
-
-### 1. Клонирование репозитория
-```bash
+#Предварительные требования
+Docker Desktop (Windows/Mac) или Docker Engine (Linux)
+Git
+4 ГБ+ оперативной памяти
+1. Клонирование репозитория
+   
+```
 git clone https://github.com/Fotonchik/laravel_test.git
+
 cd laravel_test
+
 git checkout main-new
-**2. Запуск проекта**
-bash
-**# Запуск всех контейнеров**
+
+```
+
+3. Запуск проекта
+
+4. Запуск всех контейнеров
+
+```
 docker compose up -d --build
-# Копируем пример файла окружения
+
+```
+
+5. Копируем пример файла окружения
+   
+```
 cp .env.example .env
-docker compose exec app php artisan key:generate
-**
-3. Установите зависимости Composer внутри контейнера**
-bash
+
+```
+
+6. Вставить в  .env
+```
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=secret
+```
+7. Установите зависимости Composer внутри контейнера
+
+
+```
+
 docker compose exec app composer install
+
+docker compose exec app php artisan key:generate
+
+sudo chmod -R  777 ./
+
+```
+
