@@ -5,7 +5,9 @@ Git
 1. Клонирование репозитория
    
 git clone https://github.com/Fotonchik/laravel_test.git
+
 cd laravel_test
+
 git checkout main-new
 
 3. Запуск проекта
@@ -17,6 +19,7 @@ docker compose up -d --build
 4. Копируем пример файла окружения
 
 cp .env.example .env
+
 docker compose exec app php artisan key:generate
 
 5. Установите зависимости Composer внутри контейнера
