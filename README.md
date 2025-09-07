@@ -18,6 +18,8 @@ git checkout main-new
 bash
 **# Запуск всех контейнеров**
 docker compose up -d --build
+# Копируем пример файла окружения
+cp .env.example .env
 docker compose exec app php artisan key:generate
 **
 3. Установите зависимости Composer внутри контейнера**
